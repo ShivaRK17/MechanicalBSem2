@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC-LAB</title>
+</head>
+<link rel="stylesheet" href="../css/style1.css">
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    header{
+        height: 80px;
+        width: 100vw;
+        background-color:#a3dedc;
+        text-align: center;
+        position: fixed;
+    }
+    .pdf{
+        width: 70vw;
+        height: 500px;
+    }
+</style>
+<body>
+    <header>
+        <a href="../index.html"><img height="70px" src="../img/logo.png" alt=""></a>
+        <span class="slideleft" onclick="openNav()" >&#9776;</span>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="sub" href="kom.html">KOM</a>
+        <a class="sub" href="icnm.html">ICNM</a>
+        <a class="sub" href="csrw.html">CSRW</a>
+        <a class="sub" href="eclab.html">EC LAB</a>
+        <a class="sub" href="pme.html">PME</a>
+        <a class="sub" href="ds.html">DS</a>
+        <a class="sub" href="em.html">EM</a>
+        <br><br>
+        <a class="sub" href="#">Made by ShivaRK &#10084;</a>
+    </div>
+    <div class="blank"></div>
+    <div class="content">
+        <h3>Engineering Computation Lab</h3>
+        <div class="chapter">
+            <h3>MATLAB Class-I</h3>
+            <iframe class="pdf" src="../files/eclab.pdf" frameborder="0"></iframe>
+        </div>
+        <div class="chapter">
+            <h3>MATLAB Class-II</h3>
+            <iframe src="../files/eclab2.pdf" class="pdf" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+<script src="../script.js"></script>
+</html>
