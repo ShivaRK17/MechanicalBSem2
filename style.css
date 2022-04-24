@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: #fff;
+    background-color: #eaeaea;
+    /* height: 200vh; */
+    font-family: 'Varela Round', sans-serif;
+}
+header{
+    height: 80px;
+    width: 100vw;
+    background-color:#a3dedc;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 0 1px 9px 3px rgb(128, 177, 174);
+    font-family: 'Anonymous Pro', monospace; 
+}
+.logo{
+    height: 70px;
+    /* width: 10vw; */
+    margin: 0 1vw;
+}
+#headin{
+    margin: 0 10vw;
+    border-right: 2px solid rgba(255, 6, 6, 0.75);
+    /* font-size: 20px; */
+    width: 20vw;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+    /* margin: 0 30px; 
+    position: relative;
+    top: 50%;  
+    width: 24em; */
+    /* font-size: 180%; */
+    /* text-align: center; */
+    /* transform: translateY(-50%);     */
+}
+header span{
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+}
+
+#mySidenav{
+    background-color: #000;
+    height: 100vh;
+    width: 0px;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    /* top: 80px; */
+    z-index: 1;
+    transition: ease-in-out 1.2s;
+}
+#mySidenav a{
+    text-decoration: none;
+    /* font-size: 20px; */
+    font-family: "Lato", sans-serif;
+}
+.sub{
+    font-size: 20px;
+    display: block;
+    margin: 20px 30px;
+    color: grey;
+}
+.sub:hover{
+    color: white;
+    transition: 0.2s;
+}
+.closebtn{
+    font-size: 50px;
+    margin-left: 30px;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tt{
+    background-color: white;
+    background-color: #3ab3e0;
+    width: 88vw;
+    margin: 2px;
+    margin-bottom: 10px;
+    padding: 2px;
+    /* border: 2px solid black; */
+    text-align: center;
+    display: block;
+    box-shadow: #166685 0px 3px 4px 3px;
+}
+/* .tt:hover{
+    width: 87vw;
+} */
+.tt h3{
+    font-size: 2rem;
+    color: rgb(9, 4, 90);
+    cursor: pointer;
+    text-decoration:underline;
+}
+/* .tt h3:hover{
+    font-size: 2.1rem;
+} */
+.tt img{
+    transition: 1s;
+    width: 80vw;
+    padding: 1vw;
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 50vw;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255, 1, 1, 0.75);}
+    to{border-right-color: transparent;}
+}
+
+@media screen and (max-width:810px){
+    #headin{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+    header span{
+        right: 30px;
+    }
+    .tt h3{
+        font-size: 1rem;
+    }
+    .tt img{
+        width: 85vw;
+    }
+}
